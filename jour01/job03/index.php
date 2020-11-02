@@ -1,54 +1,42 @@
 <?php
 
-// $myBool = true ; 
-// $string = 'hello la plateforme' ; 
-// $int = 10 ; 
-// $float = 1.58 ; 
 
-$tableaux1 = array ('type' => 'booléen', 'Nom' => '$myBool', 'Valeur' => 'True') ; 
-$tableaux2 = array ('type' => 'string', 'Nom' => '$string', 'Valeur' => 'Hello la plateforme') ; 
-$tableaux3 = array ('type' => 'int', 'Nom' => '$int', 'Valeur' => '10') ; 
-$tableaux4 = array ('type' => 'float', 'Nom' => '$float', 'Valeur' => '1.58') ;
 
-?>
+$myBool = true ; 
+$string = 'hello la plateforme' ; 
+$int = 10 ; 
+$float = 1.58 ; 
 
-<table style="width:60%; border-collapse:collapse ; border : 1px black solid">
-    <tr>
-        <td>
-            <?php
-                foreach($tableaux1 as $element)
-                {
-                    echo $element . '</br>' ; 
-                }
-            ?>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <?php
-                foreach($tableaux2 as $element)
-                {
-                    echo $element . '</br>' ; 
-                }
-            ?>
-        </td>
 
-        <td>
-            <?php
-                foreach($tableaux3 as $element)
-                {
-                    echo $element . '</br>' ; 
-                }
-            ?>
-        </td>
+?> 
 
-        <td>
-            <?php
-                foreach($tableaux4 as $element)
-                {
-                    echo $element . '</br>' ; 
-                }
-            ?>
-        </td>
-    </tr>
-</table>
+
+    <table>
+
+        <tr>
+            <th> Type </th>
+            <th> Nom </th>
+            <th> Valeur </th>
+        </tr>
+        <tr>
+            <td> <?php echo gettype($myBool) ?> </td>
+            <td> <?php echo '$myBool' ?> </td>
+            <td> <?php echo $myBool ?> </td>
+        </tr>
+        <tr>
+            <td> <?php echo gettype($string) ?> </td>
+            <td> <?php echo '$string' ?> </td>
+            <td> <?php echo $string ?> </td>
+        </tr>
+        <tr>
+            <td> <?php echo gettype($int) ?> </td>
+            <td> <?php echo '$int' ?> </td>
+            <td> <?php echo $int ?> </td>
+        </tr>
+        <tr>
+            <td> <?php echo gettype($float) ?> </td>
+            <td> <?php echo '$float' ?> </td>
+            <td> <?php echo $float ?> </td>
+        </tr>
+
+    </table>
