@@ -23,6 +23,6 @@ foreach($_POST as $_POST[$i])
     $i++ ;  
 }
 
-echo 'le nombre d\'arguments get est'.$i.'</br>' ; 
+echo 'le nombre d\'arguments post est'.$i.'</br>' ; 
 
 ?>
