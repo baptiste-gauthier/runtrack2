@@ -32,7 +32,7 @@ if ($_POST['fonction'] == 'gras')
 }
 
 
-``function gras($var)
+function gras($var)
 {
    
     $var = $_POST['texte'] ; 
@@ -45,11 +45,10 @@ if ($_POST['fonction'] == 'gras')
     // echo 'zeubi' ; 
 }
 
-function cesar($str,$decalage)
-{
+// function cesar($str,$decalage)
+// {
 
-}
+// }
 
-``
 
 ?>
