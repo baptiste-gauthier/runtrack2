@@ -26,29 +26,40 @@
 
 var_dump($_POST) ; 
 
+
+
 if ($_POST['fonction'] == 'gras')
 {
-    gras($var) ; 
+    gras($str) ; 
+}
+elseif ($_POST['fonction'] == 'cesar') {
+
+    cesar($str,$decalage) ; 
 }
 
 
-function gras($var)
+function gras($str)
 {
    
-    $var = $_POST['texte'] ; 
-    for ($i = 0 ; isset($var[$i]) ; $i++)
+    $str = $_POST['texte'] ; 
+    for ($i = 0 ; isset($str[$i]) ; $i++)
     {   
-        if (ctype_upper($var[$i])){
-            echo '<b>' .$var[$i].'</b>' ; 
+        if (ctype_upper($str[$i])){
+            echo '<b>' .$str[$i].'</b>' ; 
         }
     }
     // echo 'zeubi' ; 
 }
+ function cesar($str,$decalage)
+ {
+    $str = $_POST['texte'] ;
+    for ($decalage = 2 ; isset($str[$decalage]) ; $decalage = $decalage + 3)
+    {
+        echo ($str[$decalage]) ; 
+    }
+ }
 
-// function cesar($str,$decalage)
-// {
-
-// }
+ 
 
 
 ?>
