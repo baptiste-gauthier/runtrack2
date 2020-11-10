@@ -1,0 +1,1 @@
+SELECT * FROM `etudiants` WHERE `naissance` <= NOW() - INTERVAL '18' YEAR
