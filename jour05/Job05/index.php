@@ -14,7 +14,7 @@ function occurences($str, $char)
         {
             $i++ ; 
 
-            if(($str[$i]) == $char)
+            if((@$str[$i]) == @$char)
             {
                 $nb_occurence = $nb_occurence + 1 ; 
 

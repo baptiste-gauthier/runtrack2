@@ -22,25 +22,34 @@
 
 <?php
 
+var_dump($_SESSION ); 
 
-function ajoutPrenom()
+// function ajoutPrenom()
+// {
+//     if(isset($_POST['name']))
+//     {
+//         $_SESSION['name'] = $_POST['name'] ; 
+//         return $_SESSION['name'] ; // On garde la variable associé au champ de texte 
+//     }
+// }
+
+if(isset($_POST['name']))
 {
-    if(isset($_POST['name']))
-    {
-        $_SESSION['name'] = $_POST['name'] ; 
-        return $_SESSION['name'] ; // On garde la variable associé au champ de texte 
-    }
+   $_SESSION['name'] = $_POST['name']  ;
+
 }
 
-$name = ajoutPrenom(); 
+$table = array ('name' => $_POST['name']) ; 
+
+foreach ($table as $key => $value)
+{
+    echo $value ;
+}
 
 
-$_SESSION['name'] = $name ; 
-$_SESSION[1] = $name ;
 
 
 
 
-var_dump($_SESSION ); 
 
 ?>
