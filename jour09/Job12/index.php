@@ -24,7 +24,7 @@ var_dump($resultats) ;
                 <tr>
                     <th> prenom </th>
                     <th> nom </th>
-                    <th> naissance </th>
+                    <th>  </th>
                 </tr>    
             </thead>
             <tbody>
