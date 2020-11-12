@@ -32,7 +32,7 @@ if(isset($_POST['name']))
 
 for($i = 0 ; isset($_SESSION['name'][$i]); $i++)
 {
-    echo '<p>'.$_SESSION['name'][$i].'</p></br>' ; 
+    echo $_SESSION['name'][$i].'</br>' ; 
 }
 
 if(isset($_POST['reset']))
